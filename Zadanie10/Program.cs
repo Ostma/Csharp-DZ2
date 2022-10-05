@@ -5,18 +5,16 @@
 918 -> 1
 */
 
-int GetNumber ()
+int GetNumber()
 {
-Console.WriteLine("Input trehznachnoe:");
-string NumberStr = Console.ReadLine();
-int number = int.Parse(NumberStr);
-return number;
+    Console.WriteLine("Input trehznachnoe:");
+    string NumberStr = Console.ReadLine();
+    int number = int.Parse(NumberStr);
+    return number;
 }
 
 int num = GetNumber();
 
 int seconddig = (num - 100 * (num / 100)) / 10;
 
-
-Console.WriteLine (seconddig);
-
+Console.WriteLine(seconddig);
